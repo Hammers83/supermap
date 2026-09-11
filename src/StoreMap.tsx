@@ -20,6 +20,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           display: "block",
         }}
       >
+        {/* Struttura del supermercato */}
         <rect
           x="10"
           y="10"
@@ -31,6 +32,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
+        {/* Titolo */}
         <text
           x="400"
           y="50"
@@ -42,10 +44,11 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           SUPERMERCATO
         </text>
 
+        {/* Ingresso */}
         <rect
           x="40"
           y="80"
-          width="150"
+          width="130"
           height="60"
           rx="10"
           fill="#dcfce7"
@@ -54,19 +57,21 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="115"
-          y="115"
+          x="105"
+          y="116"
           textAnchor="middle"
           fontSize="18"
+          fontWeight="bold"
           fill="#166534"
         >
           INGRESSO
         </text>
 
+        {/* Frutta */}
         <rect
           x="40"
-          y="180"
-          width="120"
+          y="170"
+          width="130"
           height="80"
           rx="10"
           fill="#fef3c7"
@@ -75,19 +80,21 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="100"
-          y="225"
+          x="105"
+          y="216"
           textAnchor="middle"
           fontSize="18"
+          fontWeight="bold"
           fill="#92400e"
         >
           FRUTTA
         </text>
 
+        {/* Verdura */}
         <rect
           x="40"
-          y="290"
-          width="120"
+          y="270"
+          width="130"
           height="80"
           rx="10"
           fill="#dcfce7"
@@ -96,42 +103,22 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="100"
-          y="335"
+          x="105"
+          y="316"
           textAnchor="middle"
           fontSize="18"
+          fontWeight="bold"
           fill="#166534"
         >
           VERDURA
         </text>
 
-        <rect
-          x="650"
-          y="180"
-          width="110"
-          height="190"
-          rx="10"
-          fill="#fee2e2"
-          stroke="#991b1b"
-          strokeWidth="2"
-        />
-
-        <text
-          x="705"
-          y="280"
-          textAnchor="middle"
-          fontSize="18"
-          fill="#991b1b"
-        >
-          CASSE
-        </text>
-
         {/* Banco frigo */}
         <rect
           x="40"
-          y="390"
-          width="120"
-          height="70"
+          y="380"
+          width="130"
+          height="80"
           rx="8"
           fill={
             isHighlighted("Banco frigo")
@@ -145,10 +132,10 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           }
           strokeWidth="4"
         />
-        
+
         <text
-          x="100"
-          y="430"
+          x="105"
+          y="424"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -161,47 +148,12 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           BANCO FRIGO
         </text>
 
-        {/* Corsia 3 */}
-        <rect
-          x="90"
-          y="390"
-          width="80"
-          height="70"
-          rx="8"
-          fill={
-            isHighlighted("Corsia 3")
-              ? "#2563eb"
-              : "#e2e8f0"
-          }
-          stroke={
-            isHighlighted("Corsia 3")
-              ? "#1e3a8a"
-              : "#475569"
-          }
-          strokeWidth="4"
-        />
-        
-        <text
-          x="130"
-          y="430"
-          textAnchor="middle"
-          fontSize="16"
-          fontWeight="bold"
-          fill={
-            isHighlighted("Corsia 3")
-              ? "#ffffff"
-              : "#334155"
-          }
-        >
-          CORSIA 3
-        </text>
-
         {/* Corsia 6 */}
         <rect
           x="200"
           y="90"
           width="80"
-          height="300"
+          height="270"
           rx="8"
           fill={
             isHighlighted("Corsia 6")
@@ -218,7 +170,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         <text
           x="240"
-          y="240"
+          y="225"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -227,7 +179,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 240 240)"
+          transform="rotate(-90 240 225)"
         >
           CORSIA 6
         </text>
@@ -237,7 +189,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           x="310"
           y="90"
           width="80"
-          height="300"
+          height="270"
           rx="8"
           fill={
             isHighlighted("Corsia 7")
@@ -254,7 +206,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         <text
           x="350"
-          y="240"
+          y="225"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -263,7 +215,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 350 240)"
+          transform="rotate(-90 350 225)"
         >
           CORSIA 7
         </text>
@@ -273,7 +225,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           x="420"
           y="90"
           width="80"
-          height="300"
+          height="270"
           rx="8"
           fill={
             isHighlighted("Corsia 8")
@@ -290,7 +242,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         <text
           x="460"
-          y="240"
+          y="225"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -299,7 +251,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 460 240)"
+          transform="rotate(-90 460 225)"
         >
           CORSIA 8
         </text>
@@ -309,7 +261,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           x="530"
           y="90"
           width="80"
-          height="300"
+          height="270"
           rx="8"
           fill={
             isHighlighted("Corsia 9")
@@ -326,7 +278,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         <text
           x="570"
-          y="240"
+          y="225"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -335,16 +287,52 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 570 240)"
+          transform="rotate(-90 570 225)"
         >
           CORSIA 9
         </text>
 
+        {/* Corsia 3 */}
         <rect
           x="200"
-          y="410"
-          width="410"
-          height="50"
+          y="380"
+          width="180"
+          height="80"
+          rx="8"
+          fill={
+            isHighlighted("Corsia 3")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Corsia 3")
+              ? "#1e3a8a"
+              : "#475569"
+          }
+          strokeWidth="4"
+        />
+
+        <text
+          x="290"
+          y="426"
+          textAnchor="middle"
+          fontSize="16"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Corsia 3")
+              ? "#ffffff"
+              : "#334155"
+          }
+        >
+          CORSIA 3
+        </text>
+
+        {/* Panetteria */}
+        <rect
+          x="400"
+          y="380"
+          width="210"
+          height="80"
           rx="10"
           fill="#fef3c7"
           stroke="#92400e"
@@ -352,13 +340,38 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="405"
-          y="442"
+          x="505"
+          y="426"
           textAnchor="middle"
           fontSize="18"
+          fontWeight="bold"
           fill="#92400e"
         >
           PANETTERIA
+        </text>
+
+        {/* Casse */}
+        <rect
+          x="650"
+          y="170"
+          width="110"
+          height="290"
+          rx="10"
+          fill="#fee2e2"
+          stroke="#991b1b"
+          strokeWidth="2"
+        />
+
+        <text
+          x="705"
+          y="320"
+          textAnchor="middle"
+          fontSize="18"
+          fontWeight="bold"
+          fill="#991b1b"
+          transform="rotate(-90 705 320)"
+        >
+          CASSE
         </text>
       </svg>
     </section>
