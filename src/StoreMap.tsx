@@ -3,7 +3,8 @@ type StoreMapProps = {
 };
 
 function StoreMap({ highlightedAisle }: StoreMapProps) {
-  const isAisle7Highlighted = highlightedAisle === "Corsia 7";
+  const isHighlighted = (aisle: string) =>
+    highlightedAisle === aisle;
 
   return (
     <section>
@@ -125,15 +126,24 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CASSE
         </text>
 
+        {/* Corsia 6 */}
         <rect
           x="200"
           y="90"
           width="80"
           height="300"
           rx="8"
-          fill="#e2e8f0"
-          stroke="#475569"
-          strokeWidth="2"
+          fill={
+            isHighlighted("Corsia 6")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Corsia 6")
+              ? "#1e3a8a"
+              : "#475569"
+          }
+          strokeWidth="4"
         />
 
         <text
@@ -141,20 +151,34 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           y="240"
           textAnchor="middle"
           fontSize="16"
-          fill="#334155"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Corsia 6")
+              ? "#ffffff"
+              : "#334155"
+          }
           transform="rotate(-90 240 240)"
         >
           CORSIA 6
         </text>
 
+        {/* Corsia 7 */}
         <rect
           x="310"
           y="90"
           width="80"
           height="300"
           rx="8"
-          fill={isAisle7Highlighted ? "#2563eb" : "#e2e8f0"}
-          stroke={isAisle7Highlighted ? "#1e3a8a" : "#475569"}
+          fill={
+            isHighlighted("Corsia 7")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Corsia 7")
+              ? "#1e3a8a"
+              : "#475569"
+          }
           strokeWidth="4"
         />
 
@@ -164,21 +188,34 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
-          fill={isAisle7Highlighted ? "#ffffff" : "#334155"}
+          fill={
+            isHighlighted("Corsia 7")
+              ? "#ffffff"
+              : "#334155"
+          }
           transform="rotate(-90 350 240)"
         >
           CORSIA 7
         </text>
 
+        {/* Corsia 8 */}
         <rect
           x="420"
           y="90"
           width="80"
           height="300"
           rx="8"
-          fill="#e2e8f0"
-          stroke="#475569"
-          strokeWidth="2"
+          fill={
+            isHighlighted("Corsia 8")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Corsia 8")
+              ? "#1e3a8a"
+              : "#475569"
+          }
+          strokeWidth="4"
         />
 
         <text
@@ -186,21 +223,35 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           y="240"
           textAnchor="middle"
           fontSize="16"
-          fill="#334155"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Corsia 8")
+              ? "#ffffff"
+              : "#334155"
+          }
           transform="rotate(-90 460 240)"
         >
           CORSIA 8
         </text>
 
+        {/* Corsia 9 */}
         <rect
           x="530"
           y="90"
           width="80"
           height="300"
           rx="8"
-          fill="#e2e8f0"
-          stroke="#475569"
-          strokeWidth="2"
+          fill={
+            isHighlighted("Corsia 9")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Corsia 9")
+              ? "#1e3a8a"
+              : "#475569"
+          }
+          strokeWidth="4"
         />
 
         <text
@@ -208,7 +259,12 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           y="240"
           textAnchor="middle"
           fontSize="16"
-          fill="#334155"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Corsia 9")
+              ? "#ffffff"
+              : "#334155"
+          }
           transform="rotate(-90 570 240)"
         >
           CORSIA 9
