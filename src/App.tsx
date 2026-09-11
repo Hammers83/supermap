@@ -26,8 +26,14 @@ const pastaVariants: ProductVariant[] = [
 
 function App() {
   const [search, setSearch] = useState("");
+  const [selectedVariant, setSelectedVariant] =
+    useState<ProductVariant | null>(null);
 
   const isPastaSearch = search.trim().toLowerCase() === "pasta";
+
+  function handleVariantSelect(variant: ProductVariant) {
+    setSelectedVariant(variant);
+  }
 
   return (
     <main>
@@ -42,7 +48,10 @@ function App() {
         placeholder="Cerca un prodotto..."
         aria-label="Cerca un prodotto"
         value={search}
-        onChange={(event) => setSearch(event.target.value)}
+        onChange={(event) => {
+          setSearch(event.target.value);
+          setSelectedVariant(null);
+        }}
       />
 
       {isPastaSearch && (
@@ -52,12 +61,25 @@ function App() {
           <ul>
             {pastaVariants.map((variant) => (
               <li key={variant.name}>
-                <button type="button">
+                <button
+                  type="button"
+                  onClick={() => handleVariantSelect(variant)}
+                >
                   {variant.name}
                 </button>
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {selectedVariant && (
+        <section>
+          <h2>{selectedVariant.name}</h2>
+
+          <p>
+            📍 {selectedVariant.aisle}
+          </p>
         </section>
       )}
     </main>
