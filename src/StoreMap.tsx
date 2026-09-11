@@ -126,6 +126,41 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CASSE
         </text>
 
+        {/* Corsia 3 */}
+        <rect
+          x="90"
+          y="390"
+          width="80"
+          height="70"
+          rx="8"
+          fill={
+            isHighlighted("Corsia 3")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Corsia 3")
+              ? "#1e3a8a"
+              : "#475569"
+          }
+          strokeWidth="4"
+        />
+        
+        <text
+          x="130"
+          y="430"
+          textAnchor="middle"
+          fontSize="16"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Corsia 3")
+              ? "#ffffff"
+              : "#334155"
+          }
+        >
+          CORSIA 3
+        </text>
+
         {/* Corsia 6 */}
         <rect
           x="200"
