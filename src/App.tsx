@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StoreMap from "./StoreMap";
 
 type ProductVariant = {
   name: string;
@@ -84,21 +85,25 @@ function App() {
       )}
 
       {selectedVariant && (
-        <section>
-          <h2>{selectedVariant.name}</h2>
+        <>
+          <section>
+            <h2>{selectedVariant.name}</h2>
 
-          <p>📍 {selectedVariant.aisle}</p>
+            <p>📍 {selectedVariant.aisle}</p>
 
-          <p>
-            <strong>Reparto:</strong>{" "}
-            {selectedVariant.department}
-          </p>
+            <p>
+              <strong>Reparto:</strong>{" "}
+              {selectedVariant.department}
+            </p>
 
-          <p>
-            <strong>Vicino a:</strong>{" "}
-            {selectedVariant.landmark}
-          </p>
-        </section>
+            <p>
+              <strong>Vicino a:</strong>{" "}
+              {selectedVariant.landmark}
+            </p>
+          </section>
+
+          <StoreMap highlightedAisle={selectedVariant.aisle} />
+        </>
       )}
     </main>
   );
