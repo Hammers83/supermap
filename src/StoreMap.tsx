@@ -126,6 +126,41 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CASSE
         </text>
 
+        {/* Banco frigo */}
+        <rect
+          x="40"
+          y="390"
+          width="120"
+          height="70"
+          rx="8"
+          fill={
+            isHighlighted("Banco frigo")
+              ? "#2563eb"
+              : "#e2e8f0"
+          }
+          stroke={
+            isHighlighted("Banco frigo")
+              ? "#1e3a8a"
+              : "#475569"
+          }
+          strokeWidth="4"
+        />
+        
+        <text
+          x="100"
+          y="430"
+          textAnchor="middle"
+          fontSize="16"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Banco frigo")
+              ? "#ffffff"
+              : "#334155"
+          }
+        >
+          BANCO FRIGO
+        </text>
+
         {/* Corsia 3 */}
         <rect
           x="90"
