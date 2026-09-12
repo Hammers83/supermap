@@ -244,22 +244,27 @@ return (
       strokeWidth="4"
     />
 
-    {/* Scaffali Corsia 6 */}
-    <line x1="215" y1="130" x2="265" y2="130" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="215" y1="170" x2="265" y2="170" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="215" y1="210" x2="265" y2="210" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="215" y1="250" x2="265" y2="250" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="215" y1="290" x2="265" y2="290" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="215" y1="330" x2="265" y2="330" stroke="#94a3b8" strokeWidth="3" />
+    {/* Scaffalature Corsia 6 */}
+    <line x1="215" y1="120" x2="215" y2="330" stroke="#94a3b8" strokeWidth="6" />
+    <line x1="265" y1="120" x2="265" y2="330" stroke="#94a3b8" strokeWidth="6" />
 
-    <line
-      x1="240"
-      y1="115"
-      x2="240"
-      y2="345"
-      stroke="#94a3b8"
-      strokeWidth="2"
-    />
+    <line x1="215" y1="130" x2="235" y2="130" stroke="#64748b" strokeWidth="3" />
+    <line x1="245" y1="130" x2="265" y2="130" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="215" y1="170" x2="235" y2="170" stroke="#64748b" strokeWidth="3" />
+    <line x1="245" y1="170" x2="265" y2="170" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="215" y1="210" x2="235" y2="210" stroke="#64748b" strokeWidth="3" />
+    <line x1="245" y1="210" x2="265" y2="210" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="215" y1="250" x2="235" y2="250" stroke="#64748b" strokeWidth="3" />
+    <line x1="245" y1="250" x2="265" y2="250" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="215" y1="290" x2="235" y2="290" stroke="#64748b" strokeWidth="3" />
+    <line x1="245" y1="290" x2="265" y2="290" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="215" y1="330" x2="235" y2="330" stroke="#64748b" strokeWidth="3" />
+    <line x1="245" y1="330" x2="265" y2="330" stroke="#64748b" strokeWidth="3" />
 
     <text
       x="240"
@@ -311,22 +316,27 @@ return (
       strokeWidth="4"
     />
 
-    {/* Scaffali Corsia 7 */}
-    <line x1="325" y1="130" x2="375" y2="130" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="325" y1="170" x2="375" y2="170" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="325" y1="210" x2="375" y2="210" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="325" y1="250" x2="375" y2="250" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="325" y1="290" x2="375" y2="290" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="325" y1="330" x2="375" y2="330" stroke="#94a3b8" strokeWidth="3" />
+    {/* Scaffalature Corsia 7 */}
+    <line x1="325" y1="120" x2="325" y2="330" stroke="#94a3b8" strokeWidth="6" />
+    <line x1="375" y1="120" x2="375" y2="330" stroke="#94a3b8" strokeWidth="6" />
 
-    <line
-      x1="350"
-      y1="115"
-      x2="350"
-      y2="345"
-      stroke="#94a3b8"
-      strokeWidth="2"
-    />
+    <line x1="325" y1="130" x2="345" y2="130" stroke="#64748b" strokeWidth="3" />
+    <line x1="355" y1="130" x2="375" y2="130" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="325" y1="170" x2="345" y2="170" stroke="#64748b" strokeWidth="3" />
+    <line x1="355" y1="170" x2="375" y2="170" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="325" y1="210" x2="345" y2="210" stroke="#64748b" strokeWidth="3" />
+    <line x1="355" y1="210" x2="375" y2="210" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="325" y1="250" x2="345" y2="250" stroke="#64748b" strokeWidth="3" />
+    <line x1="355" y1="250" x2="375" y2="250" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="325" y1="290" x2="345" y2="290" stroke="#64748b" strokeWidth="3" />
+    <line x1="355" y1="290" x2="375" y2="290" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="325" y1="330" x2="345" y2="330" stroke="#64748b" strokeWidth="3" />
+    <line x1="355" y1="330" x2="375" y2="330" stroke="#64748b" strokeWidth="3" />
 
     <text
       x="350"
@@ -378,22 +388,27 @@ return (
       strokeWidth="4"
     />
 
-    {/* Scaffali Corsia 8 */}
-    <line x1="435" y1="130" x2="485" y2="130" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="435" y1="170" x2="485" y2="170" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="435" y1="210" x2="485" y2="210" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="435" y1="250" x2="485" y2="250" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="435" y1="290" x2="485" y2="290" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="435" y1="330" x2="485" y2="330" stroke="#94a3b8" strokeWidth="3" />
+    {/* Scaffalature Corsia 8 */}
+    <line x1="435" y1="120" x2="435" y2="330" stroke="#94a3b8" strokeWidth="6" />
+    <line x1="485" y1="120" x2="485" y2="330" stroke="#94a3b8" strokeWidth="6" />
 
-    <line
-      x1="460"
-      y1="115"
-      x2="460"
-      y2="345"
-      stroke="#94a3b8"
-      strokeWidth="2"
-    />
+    <line x1="435" y1="130" x2="455" y2="130" stroke="#64748b" strokeWidth="3" />
+    <line x1="465" y1="130" x2="485" y2="130" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="435" y1="170" x2="455" y2="170" stroke="#64748b" strokeWidth="3" />
+    <line x1="465" y1="170" x2="485" y2="170" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="435" y1="210" x2="455" y2="210" stroke="#64748b" strokeWidth="3" />
+    <line x1="465" y1="210" x2="485" y2="210" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="435" y1="250" x2="455" y2="250" stroke="#64748b" strokeWidth="3" />
+    <line x1="465" y1="250" x2="485" y2="250" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="435" y1="290" x2="455" y2="290" stroke="#64748b" strokeWidth="3" />
+    <line x1="465" y1="290" x2="485" y2="290" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="435" y1="330" x2="455" y2="330" stroke="#64748b" strokeWidth="3" />
+    <line x1="465" y1="330" x2="485" y2="330" stroke="#64748b" strokeWidth="3" />
 
     <text
       x="460"
@@ -445,22 +460,27 @@ return (
       strokeWidth="4"
     />
 
-    {/* Scaffali Corsia 9 */}
-    <line x1="545" y1="130" x2="595" y2="130" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="545" y1="170" x2="595" y2="170" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="545" y1="210" x2="595" y2="210" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="545" y1="250" x2="595" y2="250" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="545" y1="290" x2="595" y2="290" stroke="#94a3b8" strokeWidth="3" />
-    <line x1="545" y1="330" x2="595" y2="330" stroke="#94a3b8" strokeWidth="3" />
+    {/* Scaffalature Corsia 9 */}
+    <line x1="545" y1="120" x2="545" y2="330" stroke="#94a3b8" strokeWidth="6" />
+    <line x1="595" y1="120" x2="595" y2="330" stroke="#94a3b8" strokeWidth="6" />
 
-    <line
-      x1="570"
-      y1="115"
-      x2="570"
-      y2="345"
-      stroke="#94a3b8"
-      strokeWidth="2"
-    />
+    <line x1="545" y1="130" x2="565" y2="130" stroke="#64748b" strokeWidth="3" />
+    <line x1="575" y1="130" x2="595" y2="130" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="545" y1="170" x2="565" y2="170" stroke="#64748b" strokeWidth="3" />
+    <line x1="575" y1="170" x2="595" y2="170" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="545" y1="210" x2="565" y2="210" stroke="#64748b" strokeWidth="3" />
+    <line x1="575" y1="210" x2="595" y2="210" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="545" y1="250" x2="565" y2="250" stroke="#64748b" strokeWidth="3" />
+    <line x1="575" y1="250" x2="595" y2="250" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="545" y1="290" x2="565" y2="290" stroke="#64748b" strokeWidth="3" />
+    <line x1="575" y1="290" x2="595" y2="290" stroke="#64748b" strokeWidth="3" />
+
+    <line x1="545" y1="330" x2="565" y2="330" stroke="#64748b" strokeWidth="3" />
+    <line x1="575" y1="330" x2="595" y2="330" stroke="#64748b" strokeWidth="3" />
 
     <text
       x="570"
