@@ -148,6 +148,20 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           BANCO FRIGO
         </text>
 
+        {/* Indicatore Banco frigo */}
+        {isHighlighted("Banco frigo") && (
+          <text
+            x="105"
+            y="370"
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="bold"
+            fill="#2563eb"
+          >
+            DESTINAZIONE
+          </text>
+        )}
+
         {/* Corsia 6 */}
         <rect
           x="200"
@@ -191,6 +205,20 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         >
           CORSIA 6
         </text>
+
+        {/* Indicatore Corsia 6 */}
+        {isHighlighted("Corsia 6") && (
+          <text
+            x="240"
+            y="78"
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="bold"
+            fill="#2563eb"
+          >
+            DESTINAZIONE
+          </text>
+        )}
 
         {/* Corsia 7 */}
         <rect
@@ -236,6 +264,20 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CORSIA 7
         </text>
 
+        {/* Indicatore Corsia 7 */}
+        {isHighlighted("Corsia 7") && (
+          <text
+            x="350"
+            y="78"
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="bold"
+            fill="#2563eb"
+          >
+            DESTINAZIONE
+          </text>
+        )}
+
         {/* Corsia 8 */}
         <rect
           x="420"
@@ -279,6 +321,20 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         >
           CORSIA 8
         </text>
+
+        {/* Indicatore Corsia 8 */}
+        {isHighlighted("Corsia 8") && (
+          <text
+            x="460"
+            y="78"
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="bold"
+            fill="#2563eb"
+          >
+            DESTINAZIONE
+          </text>
+        )}
 
         {/* Corsia 9 */}
         <rect
@@ -324,6 +380,20 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CORSIA 9
         </text>
 
+        {/* Indicatore Corsia 9 */}
+        {isHighlighted("Corsia 9") && (
+          <text
+            x="570"
+            y="78"
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="bold"
+            fill="#2563eb"
+          >
+            DESTINAZIONE
+          </text>
+        )}
+
         {/* Corsia 3 */}
         <rect
           x="200"
@@ -364,6 +434,20 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         >
           CORSIA 3
         </text>
+
+        {/* Indicatore Corsia 3 */}
+        {isHighlighted("Corsia 3") && (
+          <text
+            x="290"
+            y="372"
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="bold"
+            fill="#2563eb"
+          >
+            DESTINAZIONE
+          </text>
+        )}
 
         {/* Panetteria */}
         <rect
