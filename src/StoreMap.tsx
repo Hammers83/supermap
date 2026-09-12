@@ -412,6 +412,132 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CASSE
         </text>
       </svg>
+
+      {/* Legenda */}
+      <div
+        style={{
+          marginTop: "16px",
+          padding: "12px",
+          border: "1px solid #cbd5e1",
+          borderRadius: "10px",
+          backgroundColor: "#ffffff",
+        }}
+      >
+        <strong>Legenda</strong>
+
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "12px 20px",
+            marginTop: "10px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              style={{
+                width: "18px",
+                height: "18px",
+                display: "inline-block",
+                borderRadius: "4px",
+                backgroundColor: "#2563eb",
+              }}
+            />
+            <span>Destinazione selezionata</span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              style={{
+                width: "18px",
+                height: "18px",
+                display: "inline-block",
+                borderRadius: "4px",
+                backgroundColor: "#e2e8f0",
+                border: "1px solid #475569",
+              }}
+            />
+            <span>Corsia</span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              style={{
+                width: "18px",
+                height: "18px",
+                display: "inline-block",
+                borderRadius: "4px",
+                backgroundColor: "#dcfce7",
+                border: "1px solid #166534",
+              }}
+            />
+            <span>Area verde</span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              style={{
+                width: "18px",
+                height: "18px",
+                display: "inline-block",
+                borderRadius: "4px",
+                backgroundColor: "#fef3c7",
+                border: "1px solid #92400e",
+              }}
+            />
+            <span>Reparto</span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              style={{
+                width: "18px",
+                height: "18px",
+                display: "inline-block",
+                borderRadius: "4px",
+                backgroundColor: "#fee2e2",
+                border: "1px solid #991b1b",
+              }}
+            />
+            <span>Casse</span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
