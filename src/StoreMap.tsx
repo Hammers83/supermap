@@ -593,6 +593,28 @@ return (
     >
       CASSE
     </text>
+
+    {/* Zona di passaggio davanti alle casse */}
+    <rect
+      x="650"
+      y="430"
+      width="110"
+      height="30"
+      fill="#ffffff"
+      stroke="#cbd5e1"
+      strokeWidth="2"
+    />
+
+    <text
+      x="705"
+      y="450"
+      textAnchor="middle"
+      fontSize="10"
+      fontWeight="bold"
+      fill="#64748b"
+    >
+      PASSAGGIO
+    </text>
   </svg>
 
   {/* Legenda */}
