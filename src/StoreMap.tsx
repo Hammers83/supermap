@@ -168,6 +168,14 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
+        {/* Scaffali Corsia 6 */}
+        <line x1="215" y1="130" x2="265" y2="130" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="215" y1="170" x2="265" y2="170" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="215" y1="210" x2="265" y2="210" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="215" y1="250" x2="265" y2="250" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="215" y1="290" x2="265" y2="290" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="215" y1="330" x2="265" y2="330" stroke="#94a3b8" strokeWidth="3" />
+
         <text
           x="240"
           y="225"
@@ -203,6 +211,14 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           }
           strokeWidth="4"
         />
+
+        {/* Scaffali Corsia 7 */}
+        <line x1="325" y1="130" x2="375" y2="130" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="325" y1="170" x2="375" y2="170" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="325" y1="210" x2="375" y2="210" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="325" y1="250" x2="375" y2="250" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="325" y1="290" x2="375" y2="290" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="325" y1="330" x2="375" y2="330" stroke="#94a3b8" strokeWidth="3" />
 
         <text
           x="350"
@@ -240,6 +256,14 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
+        {/* Scaffali Corsia 8 */}
+        <line x1="435" y1="130" x2="485" y2="130" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="435" y1="170" x2="485" y2="170" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="435" y1="210" x2="485" y2="210" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="435" y1="250" x2="485" y2="250" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="435" y1="290" x2="485" y2="290" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="435" y1="330" x2="485" y2="330" stroke="#94a3b8" strokeWidth="3" />
+
         <text
           x="460"
           y="225"
@@ -276,6 +300,14 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
+        {/* Scaffali Corsia 9 */}
+        <line x1="545" y1="130" x2="595" y2="130" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="545" y1="170" x2="595" y2="170" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="545" y1="210" x2="595" y2="210" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="545" y1="250" x2="595" y2="250" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="545" y1="290" x2="595" y2="290" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="545" y1="330" x2="595" y2="330" stroke="#94a3b8" strokeWidth="3" />
+
         <text
           x="570"
           y="225"
@@ -311,6 +343,12 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           }
           strokeWidth="4"
         />
+
+        {/* Scaffali Corsia 3 */}
+        <line x1="220" y1="400" x2="220" y2="440" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="260" y1="400" x2="260" y2="440" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="300" y1="400" x2="300" y2="440" stroke="#94a3b8" strokeWidth="3" />
+        <line x1="340" y1="400" x2="340" y2="440" stroke="#94a3b8" strokeWidth="3" />
 
         <text
           x="290"
