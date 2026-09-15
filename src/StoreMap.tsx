@@ -9,7 +9,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
   return (
     <section>
       <h2>Mappa del supermercato</h2>
-
       <svg
         viewBox="0 0 800 600"
         role="img"
@@ -625,15 +624,12 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           </text>
         )}
 
-        {/* ==================== */}
-        {/* CORSIA 3             */}
-        {/* ==================== */}
-
+        {/* Corsia 3 */}
         <rect
-          x="205"
-          y="470"
-          width="200"
-          height="70"
+          x="635"
+          y="175"
+          width="80"
+          height="270"
           rx="8"
           fill={
             isHighlighted("Corsia 3")
@@ -649,21 +645,48 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {/* Scaffali Corsia 3 */}
-        {[225, 265, 305, 345, 385].map((x) => (
-          <line
-            key={x}
-            x1={x}
-            y1="490"
-            x2={x}
-            y2="520"
-            stroke="#94a3b8"
-            strokeWidth="3"
-          />
+        <line
+          x1="650"
+          y1="200"
+          x2="650"
+          y2="420"
+          stroke="#94a3b8"
+          strokeWidth="6"
+        />
+
+        <line
+          x1="700"
+          y1="200"
+          x2="700"
+          y2="420"
+          stroke="#94a3b8"
+          strokeWidth="6"
+        />
+
+        {[220, 260, 300, 340, 380, 420].map((y) => (
+          <g key={y}>
+            <line
+              x1="650"
+              y1={y}
+              x2="670"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+            <line
+              x1="680"
+              y1={y}
+              x2="700"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+          </g>
         ))}
 
         <text
-          x="305"
-          y="512"
+          x="675"
+          y="335"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -672,14 +695,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
+          transform="rotate(-90 675 335)"
         >
           CORSIA 3
         </text>
 
         {isHighlighted("Corsia 3") && (
           <text
-            x="305"
-            y="458"
+            x="675"
+            y="160"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -871,7 +895,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         <line
           x1="190"
           y1="455"
-          x2="620"
+          x2="760"
           y2="455"
           stroke="#cbd5e1"
           strokeWidth="2"
@@ -879,7 +903,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="620"
+          x="760"
           y="445"
           textAnchor="end"
           fontSize="11"
