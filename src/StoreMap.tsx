@@ -9,6 +9,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
   return (
     <section>
       <h2>Mappa del supermercato</h2>
+
       <svg
         viewBox="0 0 800 600"
         role="img"
@@ -30,6 +31,79 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           stroke="#334155"
           strokeWidth="4"
         />
+
+        {/* ==================== */}
+        {/* ZONE STRUTTURALI      */}
+        {/* ==================== */}
+
+        {/* Zona superiore: reparti */}
+        <rect
+          x="25"
+          y="55"
+          width="750"
+          height="105"
+          rx="12"
+          fill="#fffbeb"
+          stroke="#d6d3d1"
+          strokeWidth="2"
+          strokeDasharray="6 5"
+        />
+
+        <text
+          x="35"
+          y="72"
+          fontSize="11"
+          fontWeight="bold"
+          fill="#78716c"
+        >
+          AREA REPARTI
+        </text>
+
+        {/* Zona centrale: corsie */}
+        <rect
+          x="25"
+          y="165"
+          width="750"
+          height="290"
+          rx="12"
+          fill="#f1f5f9"
+          stroke="#d6d3d1"
+          strokeWidth="2"
+          strokeDasharray="6 5"
+        />
+
+        <text
+          x="35"
+          y="182"
+          fontSize="11"
+          fontWeight="bold"
+          fill="#78716c"
+        >
+          AREA CORSIE
+        </text>
+
+        {/* Zona inferiore: casse e ingresso */}
+        <rect
+          x="25"
+          y="460"
+          width="750"
+          height="95"
+          rx="12"
+          fill="#f8fafc"
+          stroke="#d6d3d1"
+          strokeWidth="2"
+          strokeDasharray="6 5"
+        />
+
+        <text
+          x="35"
+          y="478"
+          fontSize="11"
+          fontWeight="bold"
+          fill="#78716c"
+        >
+          AREA USCITA
+        </text>
 
         {/* Titolo */}
         <text
