@@ -11,7 +11,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
       <h2>Mappa del supermercato</h2>
 
       <svg
-        viewBox="0 0 800 500"
+        viewBox="0 0 800 600"
         role="img"
         aria-label="Mappa del supermercato"
         style={{
@@ -20,134 +20,160 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           display: "block",
         }}
       >
-        {/* Struttura del supermercato */}
+        {/* Struttura generale del supermercato */}
         <rect
           x="10"
           y="10"
           width="780"
-          height="480"
+          height="580"
           rx="20"
           fill="#f8fafc"
           stroke="#334155"
           strokeWidth="4"
         />
 
-        {/* Corridoi di passaggio */}
-        <rect
-          x="280"
-          y="90"
-          width="30"
-          height="270"
-          fill="#ffffff"
-          stroke="#cbd5e1"
-          strokeWidth="1"
-        />
-
-        <rect
-          x="390"
-          y="90"
-          width="30"
-          height="270"
-          fill="#ffffff"
-          stroke="#cbd5e1"
-          strokeWidth="1"
-        />
-
-        <rect
-          x="500"
-          y="90"
-          width="30"
-          height="270"
-          fill="#ffffff"
-          stroke="#cbd5e1"
-          strokeWidth="1"
-        />
-
-        <rect
-          x="610"
-          y="90"
-          width="40"
-          height="270"
-          fill="#ffffff"
-          stroke="#cbd5e1"
-          strokeWidth="1"
-        />
-
         {/* Titolo */}
         <text
           x="400"
-          y="50"
+          y="42"
           textAnchor="middle"
-          fontSize="24"
+          fontSize="22"
           fontWeight="bold"
           fill="#1e293b"
         >
           SUPERMERCATO
         </text>
 
-        {/* Ingresso */}
+        {/* ==================== */}
+        {/* PARTE SUPERIORE       */}
+        {/* ==================== */}
+
+        {/* Banco / reparto superiore */}
         <rect
           x="40"
-          y="80"
-          width="130"
-          height="60"
-          rx="10"
-          fill="#dcfce7"
-          stroke="#166534"
-          strokeWidth="2"
-        />
-
-        {/* Porte ingresso */}
-        <rect
-          x="82"
-          y="128"
-          width="16"
-          height="10"
-          fill="#ffffff"
-          stroke="#166534"
-          strokeWidth="2"
-        />
-
-        <rect
-          x="112"
-          y="128"
-          width="16"
-          height="10"
-          fill="#ffffff"
-          stroke="#166534"
-          strokeWidth="2"
-        />
-
-        <text
-          x="105"
-          y="116"
-          textAnchor="middle"
-          fontSize="18"
-          fontWeight="bold"
-          fill="#166534"
-        >
-          INGRESSO
-        </text>
-
-        {/* Frutta */}
-        <rect
-          x="40"
-          y="170"
-          width="130"
-          height="80"
-          rx="10"
+          y="65"
+          width="145"
+          height="55"
+          rx="8"
           fill="#fef3c7"
           stroke="#92400e"
           strokeWidth="2"
         />
 
         <text
-          x="105"
-          y="216"
+          x="112"
+          y="98"
+          textAnchor="middle"
+          fontSize="15"
+          fontWeight="bold"
+          fill="#92400e"
+        >
+          REPARTO
+        </text>
+
+        {/* Cucina */}
+        <rect
+          x="200"
+          y="65"
+          width="145"
+          height="55"
+          rx="8"
+          fill="#fef3c7"
+          stroke="#92400e"
+          strokeWidth="2"
+        />
+
+        <text
+          x="272"
+          y="98"
+          textAnchor="middle"
+          fontSize="15"
+          fontWeight="bold"
+          fill="#92400e"
+        >
+          CUCINA
+        </text>
+
+        {/* Pane */}
+        <rect
+          x="360"
+          y="65"
+          width="145"
+          height="55"
+          rx="8"
+          fill="#fef3c7"
+          stroke="#92400e"
+          strokeWidth="2"
+        />
+
+        <text
+          x="432"
+          y="98"
+          textAnchor="middle"
+          fontSize="15"
+          fontWeight="bold"
+          fill="#92400e"
+        >
+          PANE
+        </text>
+
+        {/* Panetteria */}
+        <rect
+          x="525"
+          y="65"
+          width="220"
+          height="95"
+          rx="10"
+          fill="#fef3c7"
+          stroke="#92400e"
+          strokeWidth="3"
+        />
+
+        <text
+          x="635"
+          y="105"
           textAnchor="middle"
           fontSize="18"
           fontWeight="bold"
           fill="#92400e"
+        >
+          PANETTERIA
+        </text>
+
+        <rect
+          x="610"
+          y="115"
+          width="50"
+          height="28"
+          rx="4"
+          fill="#ffffff"
+          stroke="#92400e"
+          strokeWidth="2"
+        />
+
+        {/* ==================== */}
+        {/* ZONA SINISTRA        */}
+        {/* ==================== */}
+
+        {/* Frutta */}
+        <rect
+          x="40"
+          y="145"
+          width="135"
+          height="80"
+          rx="10"
+          fill="#dcfce7"
+          stroke="#166534"
+          strokeWidth="2"
+        />
+
+        <text
+          x="107"
+          y="191"
+          textAnchor="middle"
+          fontSize="18"
+          fontWeight="bold"
+          fill="#166534"
         >
           FRUTTA
         </text>
@@ -155,8 +181,8 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         {/* Verdura */}
         <rect
           x="40"
-          y="270"
-          width="130"
+          y="240"
+          width="135"
           height="80"
           rx="10"
           fill="#dcfce7"
@@ -165,8 +191,8 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="105"
-          y="316"
+          x="107"
+          y="286"
           textAnchor="middle"
           fontSize="18"
           fontWeight="bold"
@@ -178,10 +204,10 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         {/* Banco frigo */}
         <rect
           x="40"
-          y="380"
-          width="130"
-          height="80"
-          rx="8"
+          y="335"
+          width="135"
+          height="100"
+          rx="10"
           fill={
             isHighlighted("Banco frigo")
               ? "#2563eb"
@@ -196,10 +222,10 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="105"
-          y="424"
+          x="107"
+          y="393"
           textAnchor="middle"
-          fontSize="16"
+          fontSize="15"
           fontWeight="bold"
           fill={
             isHighlighted("Banco frigo")
@@ -207,14 +233,29 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               : "#334155"
           }
         >
-          BANCO FRIGO
+          BANCO
+        </text>
+
+        <text
+          x="107"
+          y="413"
+          textAnchor="middle"
+          fontSize="15"
+          fontWeight="bold"
+          fill={
+            isHighlighted("Banco frigo")
+              ? "#ffffff"
+              : "#334155"
+          }
+        >
+          FRIGO
         </text>
 
         {/* Indicatore Banco frigo */}
         {isHighlighted("Banco frigo") && (
           <text
-            x="105"
-            y="370"
+            x="107"
+            y="325"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -224,10 +265,14 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           </text>
         )}
 
+        {/* ==================== */}
+        {/* CORSIE CENTRALI      */}
+        {/* ==================== */}
+
         {/* Corsia 6 */}
         <rect
-          x="200"
-          y="90"
+          x="205"
+          y="175"
           width="80"
           height="270"
           rx="8"
@@ -244,136 +289,49 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffalature Corsia 6 */}
+        {/* Scaffali Corsia 6 */}
         <line
-          x1="215"
-          y1="120"
-          x2="215"
-          y2="330"
+          x1="220"
+          y1="200"
+          x2="220"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
         <line
-          x1="265"
-          y1="120"
-          x2="265"
-          y2="330"
+          x1="270"
+          y1="200"
+          x2="270"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
-        <line
-          x1="215"
-          y1="130"
-          x2="235"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="245"
-          y1="130"
-          x2="265"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="215"
-          y1="170"
-          x2="235"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="245"
-          y1="170"
-          x2="265"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="215"
-          y1="210"
-          x2="235"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="245"
-          y1="210"
-          x2="265"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="215"
-          y1="250"
-          x2="235"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="245"
-          y1="250"
-          x2="265"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="215"
-          y1="290"
-          x2="235"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="245"
-          y1="290"
-          x2="265"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="215"
-          y1="330"
-          x2="235"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="245"
-          y1="330"
-          x2="265"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
+        {[220, 260, 300, 340, 380, 420].map((y) => (
+          <g key={y}>
+            <line
+              x1="220"
+              y1={y}
+              x2="240"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+            <line
+              x1="250"
+              y1={y}
+              x2="270"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+          </g>
+        ))}
 
         <text
-          x="240"
-          y="225"
+          x="245"
+          y="335"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -382,16 +340,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 240 225)"
+          transform="rotate(-90 245 335)"
         >
           CORSIA 6
         </text>
 
-        {/* Indicatore Corsia 6 */}
         {isHighlighted("Corsia 6") && (
           <text
-            x="240"
-            y="78"
+            x="245"
+            y="160"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -403,8 +360,8 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Corsia 7 */}
         <rect
-          x="310"
-          y="90"
+          x="315"
+          y="175"
           width="80"
           height="270"
           rx="8"
@@ -421,136 +378,49 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffalature Corsia 7 */}
+        {/* Scaffali Corsia 7 */}
         <line
-          x1="325"
-          y1="120"
-          x2="325"
-          y2="330"
+          x1="330"
+          y1="200"
+          x2="330"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
         <line
-          x1="375"
-          y1="120"
-          x2="375"
-          y2="330"
+          x1="380"
+          y1="200"
+          x2="380"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
-        <line
-          x1="325"
-          y1="130"
-          x2="345"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="355"
-          y1="130"
-          x2="375"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="325"
-          y1="170"
-          x2="345"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="355"
-          y1="170"
-          x2="375"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="325"
-          y1="210"
-          x2="345"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="355"
-          y1="210"
-          x2="375"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="325"
-          y1="250"
-          x2="345"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="355"
-          y1="250"
-          x2="375"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="325"
-          y1="290"
-          x2="345"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="355"
-          y1="290"
-          x2="375"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="325"
-          y1="330"
-          x2="345"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="355"
-          y1="330"
-          x2="375"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
+        {[220, 260, 300, 340, 380, 420].map((y) => (
+          <g key={y}>
+            <line
+              x1="330"
+              y1={y}
+              x2="350"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+            <line
+              x1="360"
+              y1={y}
+              x2="380"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+          </g>
+        ))}
 
         <text
-          x="350"
-          y="225"
+          x="355"
+          y="335"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -559,16 +429,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 350 225)"
+          transform="rotate(-90 355 335)"
         >
           CORSIA 7
         </text>
 
-        {/* Indicatore Corsia 7 */}
         {isHighlighted("Corsia 7") && (
           <text
-            x="350"
-            y="78"
+            x="355"
+            y="160"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -580,8 +449,8 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Corsia 8 */}
         <rect
-          x="420"
-          y="90"
+          x="425"
+          y="175"
           width="80"
           height="270"
           rx="8"
@@ -598,136 +467,49 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffalature Corsia 8 */}
+        {/* Scaffali Corsia 8 */}
         <line
-          x1="435"
-          y1="120"
-          x2="435"
-          y2="330"
+          x1="440"
+          y1="200"
+          x2="440"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
         <line
-          x1="485"
-          y1="120"
-          x2="485"
-          y2="330"
+          x1="490"
+          y1="200"
+          x2="490"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
-        <line
-          x1="435"
-          y1="130"
-          x2="455"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="465"
-          y1="130"
-          x2="485"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="435"
-          y1="170"
-          x2="455"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="465"
-          y1="170"
-          x2="485"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="435"
-          y1="210"
-          x2="455"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="465"
-          y1="210"
-          x2="485"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="435"
-          y1="250"
-          x2="455"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="465"
-          y1="250"
-          x2="485"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="435"
-          y1="290"
-          x2="455"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="465"
-          y1="290"
-          x2="485"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="435"
-          y1="330"
-          x2="455"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="465"
-          y1="330"
-          x2="485"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
+        {[220, 260, 300, 340, 380, 420].map((y) => (
+          <g key={y}>
+            <line
+              x1="440"
+              y1={y}
+              x2="460"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+            <line
+              x1="470"
+              y1={y}
+              x2="490"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+          </g>
+        ))}
 
         <text
-          x="460"
-          y="225"
+          x="465"
+          y="335"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -736,16 +518,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 460 225)"
+          transform="rotate(-90 465 335)"
         >
           CORSIA 8
         </text>
 
-        {/* Indicatore Corsia 8 */}
         {isHighlighted("Corsia 8") && (
           <text
-            x="460"
-            y="78"
+            x="465"
+            y="160"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -757,8 +538,8 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Corsia 9 */}
         <rect
-          x="530"
-          y="90"
+          x="535"
+          y="175"
           width="80"
           height="270"
           rx="8"
@@ -775,136 +556,49 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffalature Corsia 9 */}
+        {/* Scaffali Corsia 9 */}
         <line
-          x1="545"
-          y1="120"
-          x2="545"
-          y2="330"
+          x1="550"
+          y1="200"
+          x2="550"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
         <line
-          x1="595"
-          y1="120"
-          x2="595"
-          y2="330"
+          x1="600"
+          y1="200"
+          x2="600"
+          y2="420"
           stroke="#94a3b8"
           strokeWidth="6"
         />
 
-        <line
-          x1="545"
-          y1="130"
-          x2="565"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="575"
-          y1="130"
-          x2="595"
-          y2="130"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="545"
-          y1="170"
-          x2="565"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="575"
-          y1="170"
-          x2="595"
-          y2="170"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="545"
-          y1="210"
-          x2="565"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="575"
-          y1="210"
-          x2="595"
-          y2="210"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="545"
-          y1="250"
-          x2="565"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="575"
-          y1="250"
-          x2="595"
-          y2="250"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="545"
-          y1="290"
-          x2="565"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="575"
-          y1="290"
-          x2="595"
-          y2="290"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="545"
-          y1="330"
-          x2="565"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="575"
-          y1="330"
-          x2="595"
-          y2="330"
-          stroke="#64748b"
-          strokeWidth="3"
-        />
+        {[220, 260, 300, 340, 380, 420].map((y) => (
+          <g key={y}>
+            <line
+              x1="550"
+              y1={y}
+              x2="570"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+            <line
+              x1="580"
+              y1={y}
+              x2="600"
+              y2={y}
+              stroke="#64748b"
+              strokeWidth="3"
+            />
+          </g>
+        ))}
 
         <text
-          x="570"
-          y="225"
+          x="575"
+          y="335"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -913,16 +607,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
               ? "#ffffff"
               : "#334155"
           }
-          transform="rotate(-90 570 225)"
+          transform="rotate(-90 575 335)"
         >
           CORSIA 9
         </text>
 
-        {/* Indicatore Corsia 9 */}
         {isHighlighted("Corsia 9") && (
           <text
-            x="570"
-            y="78"
+            x="575"
+            y="160"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -932,12 +625,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           </text>
         )}
 
-        {/* Corsia 3 */}
+        {/* ==================== */}
+        {/* CORSIA 3             */}
+        {/* ==================== */}
+
         <rect
-          x="200"
-          y="380"
-          width="180"
-          height="80"
+          x="205"
+          y="470"
+          width="200"
+          height="70"
           rx="8"
           fill={
             isHighlighted("Corsia 3")
@@ -953,45 +649,21 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {/* Scaffali Corsia 3 */}
-        <line
-          x1="220"
-          y1="400"
-          x2="220"
-          y2="440"
-          stroke="#94a3b8"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="260"
-          y1="400"
-          x2="260"
-          y2="440"
-          stroke="#94a3b8"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="300"
-          y1="400"
-          x2="300"
-          y2="440"
-          stroke="#94a3b8"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="340"
-          y1="400"
-          x2="340"
-          y2="440"
-          stroke="#94a3b8"
-          strokeWidth="3"
-        />
+        {[225, 265, 305, 345, 385].map((x) => (
+          <line
+            key={x}
+            x1={x}
+            y1="490"
+            x2={x}
+            y2="520"
+            stroke="#94a3b8"
+            strokeWidth="3"
+          />
+        ))}
 
         <text
-          x="290"
-          y="426"
+          x="305"
+          y="512"
           textAnchor="middle"
           fontSize="16"
           fontWeight="bold"
@@ -1004,11 +676,10 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CORSIA 3
         </text>
 
-        {/* Indicatore Corsia 3 */}
         {isHighlighted("Corsia 3") && (
           <text
-            x="290"
-            y="372"
+            x="305"
+            y="458"
             textAnchor="middle"
             fontSize="13"
             fontWeight="bold"
@@ -1018,35 +689,15 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           </text>
         )}
 
-        {/* Panetteria */}
-        <rect
-          x="400"
-          y="380"
-          width="210"
-          height="80"
-          rx="10"
-          fill="#fef3c7"
-          stroke="#92400e"
-          strokeWidth="2"
-        />
+        {/* ==================== */}
+        {/* CASSE                 */}
+        {/* ==================== */}
 
-        <text
-          x="505"
-          y="426"
-          textAnchor="middle"
-          fontSize="18"
-          fontWeight="bold"
-          fill="#92400e"
-        >
-          PANETTERIA
-        </text>
-
-        {/* Casse */}
         <rect
-          x="650"
-          y="170"
-          width="110"
-          height="290"
+          x="430"
+          y="470"
+          width="185"
+          height="70"
           rx="10"
           fill="#fee2e2"
           stroke="#991b1b"
@@ -1054,10 +705,10 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         <text
-          x="705"
-          y="190"
+          x="522"
+          y="488"
           textAnchor="middle"
-          fontSize="16"
+          fontSize="14"
           fontWeight="bold"
           fill="#991b1b"
         >
@@ -1066,50 +717,21 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Cassa 1 */}
         <rect
-          x="660"
-          y="200"
-          width="90"
-          height="48"
-          rx="6"
+          x="440"
+          y="498"
+          width="38"
+          height="28"
+          rx="4"
           fill="#ffffff"
           stroke="#991b1b"
           strokeWidth="2"
         />
 
-        <rect
-          x="668"
-          y="208"
-          width="24"
-          height="30"
-          rx="3"
-          fill="#fecaca"
-          stroke="#991b1b"
-          strokeWidth="1"
-        />
-
-        <line
-          x1="700"
-          y1="216"
-          x2="742"
-          y2="216"
-          stroke="#991b1b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="700"
-          y1="229"
-          x2="742"
-          y2="229"
-          stroke="#f87171"
-          strokeWidth="3"
-        />
-
         <text
-          x="680"
-          y="228"
+          x="459"
+          y="517"
           textAnchor="middle"
-          fontSize="9"
+          fontSize="11"
           fontWeight="bold"
           fill="#991b1b"
         >
@@ -1118,50 +740,21 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Cassa 2 */}
         <rect
-          x="660"
-          y="255"
-          width="90"
-          height="48"
-          rx="6"
+          x="482"
+          y="498"
+          width="38"
+          height="28"
+          rx="4"
           fill="#ffffff"
           stroke="#991b1b"
           strokeWidth="2"
         />
 
-        <rect
-          x="668"
-          y="263"
-          width="24"
-          height="30"
-          rx="3"
-          fill="#fecaca"
-          stroke="#991b1b"
-          strokeWidth="1"
-        />
-
-        <line
-          x1="700"
-          y1="271"
-          x2="742"
-          y2="271"
-          stroke="#991b1b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="700"
-          y1="284"
-          x2="742"
-          y2="284"
-          stroke="#f87171"
-          strokeWidth="3"
-        />
-
         <text
-          x="680"
-          y="283"
+          x="501"
+          y="517"
           textAnchor="middle"
-          fontSize="9"
+          fontSize="11"
           fontWeight="bold"
           fill="#991b1b"
         >
@@ -1170,50 +763,21 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Cassa 3 */}
         <rect
-          x="660"
-          y="310"
-          width="90"
-          height="48"
-          rx="6"
+          x="524"
+          y="498"
+          width="38"
+          height="28"
+          rx="4"
           fill="#ffffff"
           stroke="#991b1b"
           strokeWidth="2"
         />
 
-        <rect
-          x="668"
-          y="318"
-          width="24"
-          height="30"
-          rx="3"
-          fill="#fecaca"
-          stroke="#991b1b"
-          strokeWidth="1"
-        />
-
-        <line
-          x1="700"
-          y1="326"
-          x2="742"
-          y2="326"
-          stroke="#991b1b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="700"
-          y1="339"
-          x2="742"
-          y2="339"
-          stroke="#f87171"
-          strokeWidth="3"
-        />
-
         <text
-          x="680"
-          y="338"
+          x="543"
+          y="517"
           textAnchor="middle"
-          fontSize="9"
+          fontSize="11"
           fontWeight="bold"
           fill="#991b1b"
         >
@@ -1222,73 +786,103 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
 
         {/* Cassa 4 */}
         <rect
-          x="660"
-          y="365"
-          width="90"
-          height="48"
-          rx="6"
+          x="566"
+          y="498"
+          width="38"
+          height="28"
+          rx="4"
           fill="#ffffff"
           stroke="#991b1b"
           strokeWidth="2"
         />
 
-        <rect
-          x="668"
-          y="373"
-          width="24"
-          height="30"
-          rx="3"
-          fill="#fecaca"
-          stroke="#991b1b"
-          strokeWidth="1"
-        />
-
-        <line
-          x1="700"
-          y1="381"
-          x2="742"
-          y2="381"
-          stroke="#991b1b"
-          strokeWidth="3"
-        />
-
-        <line
-          x1="700"
-          y1="394"
-          x2="742"
-          y2="394"
-          stroke="#f87171"
-          strokeWidth="3"
-        />
-
         <text
-          x="680"
-          y="393"
+          x="585"
+          y="517"
           textAnchor="middle"
-          fontSize="9"
+          fontSize="11"
           fontWeight="bold"
           fill="#991b1b"
         >
           4
         </text>
 
-        {/* Zona di passaggio davanti alle casse */}
+        {/* ==================== */}
+        {/* INGRESSO              */}
+        {/* ==================== */}
+
         <rect
-          x="650"
-          y="425"
-          width="110"
-          height="35"
-          fill="#ffffff"
-          stroke="#cbd5e1"
+          x="635"
+          y="470"
+          width="125"
+          height="70"
+          rx="10"
+          fill="#dcfce7"
+          stroke="#166534"
           strokeWidth="2"
         />
 
         <text
-          x="705"
-          y="447"
+          x="697"
+          y="505"
           textAnchor="middle"
-          fontSize="10"
+          fontSize="16"
           fontWeight="bold"
+          fill="#166534"
+        >
+          INGRESSO
+        </text>
+
+        {/* Porte ingresso */}
+        <rect
+          x="675"
+          y="515"
+          width="16"
+          height="12"
+          fill="#ffffff"
+          stroke="#166534"
+          strokeWidth="2"
+        />
+
+        <rect
+          x="704"
+          y="515"
+          width="16"
+          height="12"
+          fill="#ffffff"
+          stroke="#166534"
+          strokeWidth="2"
+        />
+
+        {/* ==================== */}
+        {/* PASSAGGI              */}
+        {/* ==================== */}
+
+        <line
+          x1="190"
+          y1="150"
+          x2="190"
+          y2="455"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="8 6"
+        />
+
+        <line
+          x1="190"
+          y1="455"
+          x2="620"
+          y2="455"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="8 6"
+        />
+
+        <text
+          x="620"
+          y="445"
+          textAnchor="end"
+          fontSize="11"
           fill="#64748b"
         >
           PASSAGGIO
