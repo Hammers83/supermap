@@ -121,7 +121,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         {/* PARTE SUPERIORE       */}
         {/* ==================== */}
 
-        {/* Banco / reparto superiore */}
+        {/* Reparto */}
         <rect
           x="40"
           y="65"
@@ -324,7 +324,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           FRIGO
         </text>
 
-        {/* Indicatore Banco frigo */}
         {isHighlighted("Banco frigo") && (
           <text
             x="107"
@@ -341,6 +340,61 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         {/* ==================== */}
         {/* CORSIE CENTRALI      */}
         {/* ==================== */}
+
+        {/* Separatore tra area laterale e corsie */}
+        <line
+          x1="195"
+          y1="190"
+          x2="195"
+          y2="440"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="5 5"
+        />
+
+        {/* Separatore Corsia 6 / Corsia 7 */}
+        <line
+          x1="300"
+          y1="190"
+          x2="300"
+          y2="440"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="5 5"
+        />
+
+        {/* Separatore Corsia 7 / Corsia 8 */}
+        <line
+          x1="410"
+          y1="190"
+          x2="410"
+          y2="440"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="5 5"
+        />
+
+        {/* Separatore Corsia 8 / Corsia 9 */}
+        <line
+          x1="520"
+          y1="190"
+          x2="520"
+          y2="440"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="5 5"
+        />
+
+        {/* Separatore Corsia 9 / Corsia 3 */}
+        <line
+          x1="625"
+          y1="190"
+          x2="625"
+          y2="440"
+          stroke="#cbd5e1"
+          strokeWidth="2"
+          strokeDasharray="5 5"
+        />
 
         {/* Corsia 6 */}
         <rect
@@ -362,7 +416,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffali Corsia 6 */}
         <line
           x1="220"
           y1="200"
@@ -382,7 +435,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {[220, 260, 300, 340, 380, 420].map((y) => (
-          <g key={y}>
+          <g key={`6-${y}`}>
             <line
               x1="220"
               y1={y}
@@ -451,7 +504,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffali Corsia 7 */}
         <line
           x1="330"
           y1="200"
@@ -471,7 +523,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {[220, 260, 300, 340, 380, 420].map((y) => (
-          <g key={y}>
+          <g key={`7-${y}`}>
             <line
               x1="330"
               y1={y}
@@ -540,7 +592,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffali Corsia 8 */}
         <line
           x1="440"
           y1="200"
@@ -560,7 +611,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {[220, 260, 300, 340, 380, 420].map((y) => (
-          <g key={y}>
+          <g key={`8-${y}`}>
             <line
               x1="440"
               y1={y}
@@ -629,7 +680,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffali Corsia 9 */}
         <line
           x1="550"
           y1="200"
@@ -649,7 +699,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {[220, 260, 300, 340, 380, 420].map((y) => (
-          <g key={y}>
+          <g key={`9-${y}`}>
             <line
               x1="550"
               y1={y}
@@ -718,7 +768,6 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           strokeWidth="4"
         />
 
-        {/* Scaffali Corsia 3 */}
         <line
           x1="650"
           y1="200"
@@ -738,7 +787,7 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
         />
 
         {[220, 260, 300, 340, 380, 420].map((y) => (
-          <g key={y}>
+          <g key={`3-${y}`}>
             <line
               x1="650"
               y1={y}
@@ -813,97 +862,35 @@ function StoreMap({ highlightedAisle }: StoreMapProps) {
           CASSE
         </text>
 
-        {/* Cassa 1 */}
-        <rect
-          x="440"
-          y="498"
-          width="38"
-          height="28"
-          rx="4"
-          fill="#ffffff"
-          stroke="#991b1b"
-          strokeWidth="2"
-        />
+        {[1, 2, 3, 4].map((numero, index) => {
+          const x = 440 + index * 42;
 
-        <text
-          x="459"
-          y="517"
-          textAnchor="middle"
-          fontSize="11"
-          fontWeight="bold"
-          fill="#991b1b"
-        >
-          1
-        </text>
+          return (
+            <g key={numero}>
+              <rect
+                x={x}
+                y="498"
+                width="38"
+                height="28"
+                rx="4"
+                fill="#ffffff"
+                stroke="#991b1b"
+                strokeWidth="2"
+              />
 
-        {/* Cassa 2 */}
-        <rect
-          x="482"
-          y="498"
-          width="38"
-          height="28"
-          rx="4"
-          fill="#ffffff"
-          stroke="#991b1b"
-          strokeWidth="2"
-        />
-
-        <text
-          x="501"
-          y="517"
-          textAnchor="middle"
-          fontSize="11"
-          fontWeight="bold"
-          fill="#991b1b"
-        >
-          2
-        </text>
-
-        {/* Cassa 3 */}
-        <rect
-          x="524"
-          y="498"
-          width="38"
-          height="28"
-          rx="4"
-          fill="#ffffff"
-          stroke="#991b1b"
-          strokeWidth="2"
-        />
-
-        <text
-          x="543"
-          y="517"
-          textAnchor="middle"
-          fontSize="11"
-          fontWeight="bold"
-          fill="#991b1b"
-        >
-          3
-        </text>
-
-        {/* Cassa 4 */}
-        <rect
-          x="566"
-          y="498"
-          width="38"
-          height="28"
-          rx="4"
-          fill="#ffffff"
-          stroke="#991b1b"
-          strokeWidth="2"
-        />
-
-        <text
-          x="585"
-          y="517"
-          textAnchor="middle"
-          fontSize="11"
-          fontWeight="bold"
-          fill="#991b1b"
-        >
-          4
-        </text>
+              <text
+                x={x + 19}
+                y="517"
+                textAnchor="middle"
+                fontSize="11"
+                fontWeight="bold"
+                fill="#991b1b"
+              >
+                {numero}
+              </text>
+            </g>
+          );
+        })}
 
         {/* ==================== */}
         {/* INGRESSO              */}
