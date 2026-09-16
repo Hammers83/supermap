@@ -51,6 +51,14 @@ export const pastaVariants: ProductVariant[] = [
     landmark: "Riso e legumi",
   },
   {
+    id: "pasta-integrale",
+    name: "Pasta integrale",
+    category: "Pasta",
+    aisle: "Corsia 8",
+    department: "Pasta e prodotti secchi",
+    landmark: "Sughi e condimenti",
+  },
+  {
     id: "pasta-senza-glutine",
     name: "Pasta senza glutine",
     category: "Pasta",
@@ -59,19 +67,19 @@ export const pastaVariants: ProductVariant[] = [
     landmark: "Prodotti biologici",
   },
   {
-    id: "pasta-fresca",
-    name: "Pasta fresca",
-    category: "Pasta",
-    aisle: "Banco frigo",
-    department: "Banco frigo",
-    landmark: "Latticini",
-  },
-  {
     id: "pasta-all-uovo",
     name: "Pasta all'uovo",
     category: "Pasta",
     aisle: "Corsia 8",
     department: "Pasta e prodotti secchi",
     landmark: "Sughi e condimenti",
+  },
+  {
+    id: "pasta-fresca",
+    name: "Pasta fresca",
+    category: "Pasta",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
   },
 ];
