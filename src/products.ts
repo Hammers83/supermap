@@ -83,3 +83,54 @@ export const pastaVariants: ProductVariant[] = [
     landmark: "Latticini",
   },
 ];
+
+export const riceAndCerealsVariants: ProductVariant[] = [
+  {
+    id: "riso",
+    name: "Riso",
+    category: "Riso e cereali",
+    aisle: "Corsia 4",
+    department: "Riso e cereali",
+    landmark: "Riso e cereali",
+  },
+  {
+    id: "riso-integrale",
+    name: "Riso integrale",
+    category: "Riso e cereali",
+    aisle: "Corsia 4",
+    department: "Riso e cereali",
+    landmark: "Riso e cereali",
+  },
+  {
+    id: "riso-basmati",
+    name: "Riso basmati",
+    category: "Riso e cereali",
+    aisle: "Corsia 4",
+    department: "Riso e cereali",
+    landmark: "Riso e cereali",
+  },
+  {
+    id: "cous-cous",
+    name: "Cous cous",
+    category: "Riso e cereali",
+    aisle: "Corsia 4",
+    department: "Riso e cereali",
+    landmark: "Riso e cereali",
+  },
+  {
+    id: "farro",
+    name: "Farro",
+    category: "Riso e cereali",
+    aisle: "Corsia 4",
+    department: "Riso e cereali",
+    landmark: "Riso e cereali",
+  },
+  {
+    id: "riso-pronto",
+    name: "Riso Pronto",
+    category: "Riso e cereali",
+    aisle: "Corsia 4",
+    department: "Riso e cereali",
+    landmark: "Riso e cereali",
+  },
+];
