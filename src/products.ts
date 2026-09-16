@@ -1,7 +1,41 @@
+export const productCategories = [
+  "Pasta",
+  "Riso e cereali",
+  "Sughi e condimenti",
+  "Colazione",
+  "Bevande",
+  "Acqua",
+  "Latticini",
+  "Carne",
+  "Pesce",
+  "Frutta",
+  "Verdura",
+  "Surgelati",
+  "Prodotti per la casa",
+  "Igiene personale",
+  "Auto",
+  "Brico",
+  "Giocattoli",
+  "Cancelleria",
+  "Teleria",
+  "Intimo",
+  "Banco freschi",
+  "Pulizia per la casa",
+  "Libri",
+  "Animaleria",
+  "Casalinghi",
+  "Snack",
+  "Dolciumi",
+  "Profumeria",
+  "Prima infanzia",
+] as const;
+
+export type ProductCategory = (typeof productCategories)[number];
+
 export type ProductVariant = {
   id: string;
   name: string;
-  category: string;
+  category: ProductCategory;
   aisle: string;
   department: string;
   landmark: string;
