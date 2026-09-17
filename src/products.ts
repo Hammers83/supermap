@@ -334,4 +334,47 @@ export const beverageVariants: ProductVariant[] = [
     department: "Bevande",
     landmark: "Bevande",
   },
+  {
+    id: "bevande-alcoliche",
+    name: "Bevande alcoliche",
+    category: "Bevande",
+    aisle: "Corsia 2",
+    department: "Bevande",
+    landmark: "Bevande",
+  },
+];
+
+export const waterVariants: ProductVariant[] = [
+  {
+    id: "acqua-naturale",
+    name: "Acqua naturale",
+    category: "Acqua",
+    aisle: "Corsia 2",
+    department: "Acqua",
+    landmark: "Acqua",
+  },
+  {
+    id: "acqua-frizzante",
+    name: "Acqua frizzante",
+    category: "Acqua",
+    aisle: "Corsia 2",
+    department: "Acqua",
+    landmark: "Acqua",
+  },
+  {
+    id: "acqua-leggermente-frizzante",
+    name: "Acqua leggermente frizzante",
+    category: "Acqua",
+    aisle: "Corsia 2",
+    department: "Acqua",
+    landmark: "Acqua",
+  },
+  {
+    id: "acqua-aromatizzata",
+    name: "Acqua aromatizzata",
+    category: "Acqua",
+    aisle: "Corsia 2",
+    department: "Acqua",
+    landmark: "Acqua",
+  },
 ];
