@@ -481,3 +481,54 @@ export const meatVariants: ProductVariant[] = [
   },
 ];
 
+export const fishVariants: ProductVariant[] = [
+  {
+    id: "pesce-fresco",
+    name: "Pesce fresco",
+    category: "Pesce",
+    aisle: "Pescheria",
+    department: "Pescheria",
+    landmark: "Pescheria",
+  },
+  {
+    id: "pesce-surgelato",
+    name: "Pesce surgelato",
+    category: "Pesce",
+    aisle: "Pescheria",
+    department: "Pescheria",
+    landmark: "Pescheria",
+  },
+  {
+    id: "salmone",
+    name: "Salmone",
+    category: "Pesce",
+    aisle: "Pescheria",
+    department: "Pescheria",
+    landmark: "Pescheria",
+  },
+  {
+    id: "tonno",
+    name: "Tonno",
+    category: "Pesce",
+    aisle: "Pescheria",
+    department: "Pescheria",
+    landmark: "Pescheria",
+  },
+  {
+    id: "merluzzo",
+    name: "Merluzzo",
+    category: "Pesce",
+    aisle: "Pescheria",
+    department: "Pescheria",
+    landmark: "Pescheria",
+  },
+  {
+    id: "molluschi-e-crostacei",
+    name: "Molluschi e crostacei",
+    category: "Pesce",
+    aisle: "Pescheria",
+    department: "Pescheria",
+    landmark: "Pescheria",
+  },
+];
+
