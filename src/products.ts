@@ -430,3 +430,54 @@ export const dairyVariants: ProductVariant[] = [
   },
 ];
 
+export const meatVariants: ProductVariant[] = [
+  {
+    id: "pollo",
+    name: "Pollo",
+    category: "Carne",
+    aisle: "Macelleria",
+    department: "Macelleria",
+    landmark: "Macelleria",
+  },
+  {
+    id: "manzo",
+    name: "Manzo",
+    category: "Carne",
+    aisle: "Macelleria",
+    department: "Macelleria",
+    landmark: "Macelleria",
+  },
+  {
+    id: "maiale",
+    name: "Maiale",
+    category: "Carne",
+    aisle: "Macelleria",
+    department: "Macelleria",
+    landmark: "Macelleria",
+  },
+  {
+    id: "tacchino",
+    name: "Tacchino",
+    category: "Carne",
+    aisle: "Macelleria",
+    department: "Macelleria",
+    landmark: "Macelleria",
+  },
+  {
+    id: "hamburger",
+    name: "Hamburger",
+    category: "Carne",
+    aisle: "Macelleria",
+    department: "Macelleria",
+    landmark: "Macelleria",
+  },
+  {
+    id: "carne-macinata",
+    name: "Carne macinata",
+    category: "Carne",
+    aisle: "Macelleria",
+    department: "Macelleria",
+    landmark: "Macelleria",
+  },
+];
+
