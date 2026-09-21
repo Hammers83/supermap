@@ -378,3 +378,55 @@ export const waterVariants: ProductVariant[] = [
     landmark: "Acqua",
   },
 ];
+
+export const dairyVariants: ProductVariant[] = [
+  {
+    id: "latte",
+    name: "Latte",
+    category: "Latticini",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
+  },
+  {
+    id: "yogurt",
+    name: "Yogurt",
+    category: "Latticini",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
+  },
+  {
+    id: "burro",
+    name: "Burro",
+    category: "Latticini",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
+  },
+  {
+    id: "formaggi",
+    name: "Formaggi",
+    category: "Latticini",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
+  },
+  {
+    id: "panna",
+    name: "Panna",
+    category: "Latticini",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
+  },
+  {
+    id: "ricotta",
+    name: "Ricotta",
+    category: "Latticini",
+    aisle: "Banco frigo",
+    department: "Banco frigo",
+    landmark: "Latticini",
+  },
+];
+
