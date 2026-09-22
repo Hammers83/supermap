@@ -1,6 +1,6 @@
 import { useState } from "react";
 import StoreMap from "./StoreMap";
-import { pastaVariants, type ProductVariant } from "./products";
+import { allProducts, type ProductVariant } from "./products";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -8,6 +8,10 @@ function App() {
     useState<ProductVariant | null>(null);
 
   const isPastaSearch = search.trim().toLowerCase() === "pasta";
+
+  const pastaProducts = allProducts.filter(
+    (product) => product.category === "Pasta"
+  );
 
   function handleVariantSelect(variant: ProductVariant) {
     setSelectedVariant(variant);
@@ -37,7 +41,7 @@ function App() {
           <h2>Che tipo di pasta cerchi?</h2>
 
           <ul>
-            {pastaVariants.map((variant) => (
+            {pastaProducts.map((variant) => (
               <li key={variant.name}>
                 <button
                   type="button"
