@@ -7,11 +7,13 @@ function App() {
   const [selectedVariant, setSelectedVariant] =
     useState<ProductVariant | null>(null);
 
-  const isPastaSearch = search.trim().toLowerCase() === "pasta";
+  const normalizedSearch = search.trim().toLowerCase();
 
-  const pastaProducts = allProducts.filter(
-    (product) => product.category === "Pasta"
+  const matchingProducts = allProducts.filter(
+    (product) => product.category.toLowerCase() === normalizedSearch
   );
+
+  const hasCategorySearch = normalizedSearch !== "" && matchingProducts.length > 0;
 
   function handleVariantSelect(variant: ProductVariant) {
     setSelectedVariant(variant);
@@ -36,13 +38,13 @@ function App() {
         }}
       />
 
-      {isPastaSearch && (
+      {hasCategorySearch && (
         <section>
-          <h2>Che tipo di pasta cerchi?</h2>
+          <h2>Che tipo di {search.trim().toLowerCase()} cerchi?</h2>
 
           <ul>
-            {pastaProducts.map((variant) => (
-              <li key={variant.name}>
+            {matchingProducts.map((variant) => (
+              <li key={variant.id}>
                 <button
                   type="button"
                   onClick={() => handleVariantSelect(variant)}
