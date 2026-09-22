@@ -9,11 +9,18 @@ function App() {
 
   const normalizedSearch = search.trim().toLowerCase();
 
-  const matchingProducts = allProducts.filter(
-    (product) => product.category.toLowerCase() === normalizedSearch
-  );
+  const matchingProducts = allProducts.filter((product) => {
+    const productName = product.name.toLowerCase();
+    const categoryName = product.category.toLowerCase();
 
-  const hasCategorySearch = normalizedSearch !== "" && matchingProducts.length > 0;
+    return (
+      productName.includes(normalizedSearch) ||
+      categoryName.includes(normalizedSearch)
+    );
+  });
+
+  const hasSearchResults =
+    normalizedSearch !== "" && matchingProducts.length > 0;
 
   function handleVariantSelect(variant: ProductVariant) {
     setSelectedVariant(variant);
@@ -38,9 +45,9 @@ function App() {
         }}
       />
 
-      {hasCategorySearch && (
+      {hasSearchResults && (
         <section>
-          <h2>Che tipo di {search.trim().toLowerCase()} cerchi?</h2>
+          <h2>Risultati della ricerca</h2>
 
           <ul>
             {matchingProducts.map((variant) => (
